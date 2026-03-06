@@ -21,14 +21,20 @@ title: home
 </div>
 
 <div class="home-section">
-  <h2>explore</h2>
-  <ul>
-    <li><a href="{{ '/about/' | relative_url }}">about</a></li>
-    <li><a href="{{ '/blog/' | relative_url }}">blog</a></li>
-  </ul>
+  <h2>latest post</h2>
+
+  {% assign latest_post = site.posts.first %}
+  {% if latest_post %}
+    <h3>
+      <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
+    </h3>
+    <p>{{ latest_post.date | date: "%B %-d, %Y" }}</p>
+    <p>{{ latest_post.summary }}</p>
+    <p>
+      <a href="{{ latest_post.url | relative_url }}">read more →</a>
+    </p>
+  {% else %}
+    <p>no posts yet.</p>
+  {% endif %}
 </div>
 
-<div class="home-section">
-  <h2>currently</h2>
-  <p>building</p>
-</div>
