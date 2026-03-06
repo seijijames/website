@@ -7,6 +7,7 @@ permalink: /blog/
 <h1>blog</h1>
 
 <ul>
+ <article class="post">
  {% for post in site.posts %}
     <h3>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -17,4 +18,5 @@ permalink: /blog/
       <a href="{{ post.url | relative_url }}">read more →</a>
     </p>
   {% endfor %}
+ </article>
   </ul>
