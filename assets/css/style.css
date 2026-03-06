@@ -109,6 +109,7 @@ nav a:hover {
   border: 3px solid #ff9bd1;
   padding: 24px;
   max-width: 700px;
+  box-shadow: 6px 6px 0 #ffb6da;
 }
 
 .post-header h1 {
