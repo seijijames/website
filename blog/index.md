@@ -4,7 +4,7 @@ title: blog
 permalink: /blog/
 ---
 <ul>
- <article class="post-preview">
+ <article class="postpreview">
  {% for post in site.posts %}
     <h3>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
