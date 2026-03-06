@@ -94,7 +94,6 @@ p, li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
 }
 
 .site-title {
@@ -104,7 +103,7 @@ p, li {
 .topnav {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .topnav a {
@@ -112,6 +111,7 @@ p, li {
   padding: 8px 12px;
   background: white;
   border: 2px solid #ff9bd1;
+  display: inline-block;
 }
 
 .topnav a:hover {
