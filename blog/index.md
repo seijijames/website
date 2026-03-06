@@ -7,10 +7,14 @@ permalink: /blog/
 <h1>blog</h1>
 
 <ul>
-  {% for post in site.posts %}
-    <li>
+ {% for post in site.posts %}
+    <h3>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      — {{ post.date | date: "%B %-d, %Y" }}
-    </li>
+    </h3>
+    <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+    <p>{{ post.summary }}</p>
+    <p>
+      <a href="{{ post.url | relative_url }}">read more →</a>
+    </p>
   {% endfor %}
-</ul>
+  </ul>
