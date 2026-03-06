@@ -9,7 +9,9 @@ permalink: /blog/
     <h3>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h3>
-    <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+    <p class="post-date">
+      {{ page.date | date: "%B %-d, %Y" }}
+    </p>
     <p>{{ post.summary }}</p>
     <p>
       <a href="{{ post.url | relative_url }}">read more →</a>
